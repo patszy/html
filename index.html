@@ -4,31 +4,352 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Road Map</title>
 </head>
 <body>
-    <ol>
+    <ol>HTML
         <li>Building HTML
             <ul>
-                <li>File: name.html</li>
-                <li>Basic Tags: HTML -> Head, Body</li>
-                <li>Data in tags in body: &ltp attribute="value"&gt Data &lt/p&gt</li>
-                <li>Special chars added by reference equivalent: &amp;amp;</li>
-                <li>Comments: &lt!-- Text --&gt</li>
+                <li>File (name.html)</li>
+                <li>Language declaration (html lang="pl-PL")</li>
+                <li>Basic Tags (html, head, body)</li>
+                <li>Data in tags in body (tagName attributeName="attributeValue" Data tagName)</li>
+                <li>Special chars added by reference equivalent (&amp;amp;)</li>
+                <li>Comments (<!-- Text -->)</li>
             </ul>
         </li>
         <li>HEAD tag
             <ul>
-                <li>File: name.html</li>
-                <li>Basic Tags: HTML -> Head, Body</li>
-                <li>Data in tags in body: &ltp attribute="value"&gt Data &lt/p&gt</li>
-                <li>Special chars added by reference equivalent: &amp;amp;</li>
-                <li>Comments: &lt!-- Text --&gt</li>
+                <li>Set characters (meta charset="utf-8")</li>
+                <li>Author (meta name="author" content="")</li>
+                <li>Description (meta name="description" content="Description under tite in Google Search")</li>
+                <li>Add external styles (link rel="stylesheet" href="filePath/fileName.css")</li>
+                <li>Add external scripts (script src="filePath/fileName.js" type="text/javascript" defer /script)</li>
+                <li>Icon before title (link rel="shortcut icon" href="faviconName.ico" type="image/x-icon")</li>
+                <li>Title tag</li>
             </ul>
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Body tag
+            <ol type="a">
+                <li>Text
+                    <ul>
+                        <li>Paragraph (p)</li>
+                        <li>Headings, Sub-headings (h1-h6)</li>
+                        <li>Wrappers (div, span)</li>
+                        <li>Line break (br)</li>
+                        <li>Horizontal rule (hr)</li>
+                        <li>Strong</li>
+                        <li>Whitespace is only one</li>
+                    </ul>
+                </li>
+                <li>Link
+                    <ul>
+                        <li>a href="linkPath"</li>
+                        <li>Link desription (title="")</li>
+                        <li>Image can be a link</li>
+                        <li>Link to document by id in href</li>
+                        <li>Absolute, Relative URL.</li>
+                        <li>Email link (a href="mailto:mailAddress")</li>
+                        <li>Good link practise:
+                            <ul>
+                                <li>Link name: short, descriptive.</li>
+                                <li>Use relative links.</li>
+                                <li>Downloading links name: Download pdf (10MB), Watch wideo (strean opens in tab), Play the game (requires flash)</li>
+                                <li>Downloading links uses download attribute to set default fileName.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Advanced Text
+                    <ul>
+                        <li>Description list (dl-list, dt-term, dd-definition)</li>
+                        <li>Lists (ol, ul, li)</li>
+                        <li>Block quotations (blockquote)</li>
+                        <li>Line quotations (q)</li>
+                        <li>Cite (no use)</li>
+                        <li>Abbreviations (abbr title="fullAbbreviationName)"</li>
+                        <li>Address</li>
+                        <li>Superscript, Subscript</li>
+                        <li>Code (code, pre, var, kbd, samp)</li>
+                        <li>Time (time datetime="2020-01-31T12:00"):</li>
+                    </ul>
+                </li>
+                <li>Images
+                    <ul>
+                        <li>img src="imagePath"</li>
+                        <li>No image display description (alt="")</li>
+                        <li>If image is decoration alt should be blank</li>
+                        <li>Alt should be descriptive</li>
+                        <li>Img can be a link</li>
+                        <li>Image title</li>
+                        <li>Image with description (figure)</li>
+                        <li>Title inside figure (figcaption)</li>
+                        <li>Responsive (srcet="imgPath maxWidthw, imgPath maxWidthw")</li>
+                        <li>Responsive (sizes="(max-width: widthpx) maxWidthpx, maxWidthpx")</li>
+                        <li>Picture tag (picture, source)</li>
+                    </ul>
+                </li>
+                <li>Vector Graphics
+                    <ul>
+                        <li>Vectop graphics tag (svg width="" height="")</li>
+                        <li>Circle (circle cx="" cy="" r="" fill=""</li>
+                        <li>Rectangle (rect width="" height="" fill=""</li>
+                        <li>We can add svg in img tag</li>
+                    </ul>
+                </li>
+                <li>Audio/Video
+                    <ul>
+                        <li>video src=""</li>
+                        <li>Multiple video formats (source src="" type="video/mp4")</li>
+                        <li>Preset settings (controls, autoplay, loop, muted, poster="imagePath", preload="none/auto/metadata"</li>
+                        <li>audio src=""</li>
+                        <li>Multiple audio formats (source src="" type="video/mp4")</li>
+                        <li>track kind="subtitles" src="subtitlesPath.vtt" srclang="" label="Polish"</li>
+                        <li>Subtitles.vtt: WebVtt, number, time of track --> time of displaying subtitles, subtitles</li>
+                    </ul>
+                </li>
+                <li>Tables
+                    <ul>
+                        <li>table</li>
+                        <li>Table cell (td)</li>
+                        <li>Table row (tr)</li>
+                        <li>Table header (th), scope="col/row" is for screen readers</li>
+                        <li>Connecting rows (rowspan="nrOfRows")</li>
+                        <li>Connecting columns (colspan="nrOfColumns")</li>
+                        <li>Styling tables (colgroup, col), u can use in col tag span="nrOfColumns" attribute</li>
+                        <li>Table title (caption)</li>
+                        <li>Table structure (thead, tbody, tfoot), table styling should be inside thead</li>
+                        <li>Assotiation between headers and cells (th id="idName", td headers="idName")</li>
+                    </ul>
+                </li>
+                <li>Embending
+                    <ul>
+                        <li>iframe src="webPageURL"</li>
+                        <li>Attributes (allowfullscreen, frameborder="0/1" sandbox)</li>
+                        <li>Safety: use when necessary, https, sandbox mode</li>
+                        <li>Embed, object elemets</li>
+                    </ul>
+                </li>
+                <li>Document Structure
+                    <ul>
+                        <li>Header</li>
+                        <li>Nav</li>
+                        <li>Main (main, article, section, div)</li>
+                        <li>Aside</li>
+                        <li>Footer</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Debugging HTML
+            <ul>
+                <li>Syntax - wrong, no close, wront letter, attribute.</li>
+                <li>Logic - syntax is ok but you didn't want that HTML structure.</li>
+                <li>Validation - checking is everything ok with syntax, logic, semantic.</li>
+            </ul>
+        </li>
+    </ol>
+    <ol>CSS
+        <li>Building CSS
+            <ul>
+                <li>File (name.css)</li>
+                <li>Internal CSS (style Style Rules /style)</li>
+                <li>External CSS ((link rel="stylesheet" href="filePath/fileName.css"))</li>
+                <li>Syntax (elementSelector {property: value;})</li>
+                <li>Comments (/* Text */))</li>
+                <li>CSS is cascading (styles after overwrites before)</li>
+                <li>Rules (@import 'style.css')</li>
+                <li>Functions (calc(90% - 30px)</li>
+                <li>Formatting CSS</li>
+                <li>Comments</li>
+                <li>Logical sections/groups</li>
+                <li>Avoid overly-specific selectors</li>
+                <li>Break CSS into multiple files</li>
+                <li>Variables</li>
+                <li>BEM</li>
+                <li>Frameworks, Preprocessors</li>
+            </ul>
+        </li>
+        <li>Selectors
+            <ul>
+                <li>Universal (*)</li>
+                <li>Class (.className)</li>
+                <li>Id (#idName)</li>
+                <li>HTML (tagName tagName)</li>
+                <li>Attribute (a[attr], a[attr="value"], attr~/|/^/$/*="value")</li>
+                <li>Pseudo class ()</li>
+                <li>Pseudo elements (::after/before/backdrop/cur/cur-region/first-letter/first-line/file-selector-button/grammar-error/marker/part()/placeholder/selection/slotted()/spelling-error/target-text)</li>
+                <li>Combinators (elem >,~,+,|| elem)</li>
+                <li>Several elements (element, element)</li>
+                <li>State (elementName:link/visited/hover/active)</li>
+                <li>We can connect selectors (elementSelector.className/idName tagName)</li>
+                <li>Specificity (!important/styleAttribute, id, class/attribute/pseudoClass, elements/pseudoElement)</li>
+                <li>Shorthands (background)</li>
+            </ul>
+        </li>
+        <li>CSS Rules
+            <ul>
+                <li>Controlling inheritance (inherit, initial, unset)</li>
+                <li>Z-index</li>
+                <li>Box model [box-sizing:content/border-box](content, padding, botder, margin)</li>
+                <li>Display (block, inline, inline-block, flex, grid)</li>
+                <li>Background (background-color/image[url()/linear/radial-gradient()]/repeat[no-repeat, repeat/-x/-y]/size[cover/contain/size]/position/attachment[scroll/fixed/local])</li>
+                <li>Border (border-top/bottom/left/right/width/style[dashed/dotted/double/groove/inset/outset/ridge/solid]/color/radius)</li>
+                <li>Writing-mode (horizontal-tb, vertical-lr/rl)
+                    <ul>
+                        <li>Width (inline-size)</li>
+                        <li>Height (block-size)</li>
+                        <li>Padding, Margin, Border (padding/margin/border-inline/block-start/end)</li>
+                        <li>Top, Bottom, Right, Left (inline, block-start/end)</li>
+                    </ul>
+                </li>
+                <li>Overflow/-x/-y (visible, hidden, auto, scroll)</li>
+                <li>Overflow-wrap, Word-break</li>
+                <li>Values (%, numbers, color[keyword, rgb/a, hsl/a], images[url, gradient], position, string, functions)</li>
+                <li>Units (cm, mm, Q, in, pc, pt, px, em, ex, ch, rem, lh, vw, vh, vmin, vmax)</li>
+            </ul>
+        </li>
+        <li>Item size
+            <ul>
+                <li>Margin, Padding % are calculated from content box size.</li>
+                <li>Min/Max sizes (min/max-height/width</li>
+                <li>Viewport</li>
+                <li>Images (object-fit[cover, contain, fill])</li>
+            </ul>
+        </li>
+        <li>Tables
+            <ul>
+                <li>Table-layout (auto, fixed)</li>
+                <li>Border-collapse (separate, collapse)</li>
+            </ul>
+        </li>
+        <li>Text
+            <ol type="a">
+                <li>Plain
+                    <ul>
+                        <li>Color[keyword, rgb/a, hsl/a]</li>
+                        <li>Font (fonr-family[sans-serif, serif, cursive, fantasy, mono-space])</li>
+                        <li>Font-size</li>
+                        <li>Font-style (normal, italic, oblique)</li>
+                        <li>Font-weight (normal, bold, lighter, bolder, 100-900)</li>
+                        <li>Text-transform (none, uppercase, lowercase, capitalize, full-width)</li>
+                        <li>Text-decoration-line(none, underline, overline, line-through)/color/style(solid, double, dashed, dotted, wavy)/thickness(auto, form-font)</li>
+                        <li>Text-shadow (horizontal, vertical, blur radius, color)</li>
+                        <li>Layout (text-align[left, right, center, justify])</li>
+                        <li>Line-height</li>
+                        <li>Letter/Word-spacing</li>
+                        <li>We can add our own font (@font-face {font-family: "fontName";, src: url("fortPath");})</li>
+                    </ul>
+                </li>
+                <li>List
+                    <ul>
+                        <li>List-style-type (disc, circle, square, decimal, roman, greek, latin, "\1f44D", other)</li>
+                        <li>List-style-position (inside, outside)</li>
+                        <li>List-style-image (url())</li>
+                        <li>Counting - start="4" attr</li>
+                        <li>Reverse - reversed attr</li>
+                        <li>Value - value="5" attr</li>
+                    </ul>
+                </li>
+                <li>Link
+                    <ul>
+                        <li>Default properties</li>
+                        <li>Link is styled in every state (:visited/hover/focus/active)</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Layout
+            <ol type="a">
+                <li>Normal Flow
+                    <ul>
+                        <li>Default element layout (block, inline, inline-block)</li>
+                        <li>Block elmeents (address, article, aside, blockquote, details, dialog, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1-h6, header, hgroup, hr, li, main, nav, ol, ul, p, pre, section, table)</li>
+                        <li>Inline elements (a, abbr, acronym, audio, br, button, canvas, cite, code, data, datalist, del, em, i, iframe, img, input, label, mark, map, object, picture, q, script, select, span, strong, sub, sup, svg, template, textarea, time, u, var, video, wbr)</li>
+                    </ul>
+                </li>
+                <li>Flexbox - 1 dimension
+                    <ul>
+                        <li>Display (flex, inline-flex)</li>
+                        <li>Flex-direction (row, column, row/colum-reverse)</li>
+                        <li>Flex-wrap (nowrap, wrap, wrap-reverse)</li>
+                        <li>Flex-flow (flex-direction + flex-wrap)</li>
+                        <li>Element size (flex)</li>
+                        <li>Align-items/self (stretch, center, start, end)</li>
+                        <li>Justify-content (start, center, space-between/around/evenly)</li>
+                        <li>Order</li>
+                    </ul>
+                </li>
+                <li>Grid - 2 dimensions
+                    <ul>
+                        <li>Display (grid, inline-grid)</li>
+                        <li>Grid-template-columns (fr, repeat(number[3], what[1fr]))</li>
+                        <li>Grid/column/row-gap, gap</li>
+                        <li>Grid-auto-columns/rows (auto/ fr/ min-content/ minmax(min, max), )</li>
+                        <li>Grid-column/row-start/end</li>
+                        <li>Grid-template-areas ("a a a/b c c/ b c c"), in item grid-area: name[a/b/c]</li>
+                    </ul>
+                </li>
+                <li>Float
+                    <ul>
+                        <li>Float (none, left, right)</li>
+                        <li>Modifies computed display value</li>
+                        <li>Clearing float:
+                            <ul>
+                                <li>ClearElement (clear: left/right)</li>
+                                <li>::after (content: ""; clear: both; display: block;)</li>
+                                <li>Overflow (auto)</li>
+                                <li>Display (flow-root)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Position (static, relative, absolute, sticky, scroll, fixed) </li>
+                <li>Multiple column layout
+                    <ul>
+                        <li>Column-count</li>
+                        <li>Column-width</li>
+                        <li>Column-gap</li>
+                        <li>Column-rule (size style color)</li>
+                        <li>Column-span (none, all)</li>
+                        <li>Break-inside (auto, avoid, avoid-page/column/region)</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Responsive Web Design
+            <ul>
+                <li></li>
+            </ul>
+        </li>
+        <li>Debugging
+            <ul>
+                <li>DevTools</li>
+                <li>Syntax</li>
+                <li>Specificity</li>
+                <li>Browser support</li>
+            </ul>
+        </li>
+        <li>Frameworks
+            <ul>Bootstrap
+                <li></li>
+            </ul>
+        </li>
+    </ol>
+    <ol>JavaScript
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>Frameworks
+            <ul>React</ul>
+            <ul>Vue</ul>
+            <ul>Angular</ul>
+            <ul>JQuery</ul>
+        </li>
     </ol>
 </body>
 </html>
